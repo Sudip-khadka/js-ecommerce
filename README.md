@@ -1,4 +1,4 @@
-#The site is live at https://sudip-khadka.github.io/js-ecommerce/index.html
+# The site is live at https://sudip-khadka.github.io/js-ecommerce/index.html
 ## THis is a basic ecommerce site made using HTML, CSS & JS
 # This is the login page 
 ## Use any username or password from https://dummyjson.com/users this api 
