@@ -1,0 +1,19 @@
+
+footer{
+    background-color: #CB8884;
+    color:#F4EBE9;
+    display: flex ;
+    padding:40px;
+    justify-content: space-around;
+}
+.brand>p{
+    margin-top: 10px;
+    font-size: large;
+}
+.email,.whatsapp{
+    display: flex;
+    gap:10px;
+}
+.links>p,.policy>p{
+margin:0px;
+}
