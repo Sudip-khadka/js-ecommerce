@@ -22,7 +22,7 @@
 it displays all your added items 
 ![image](https://github.com/Sudip-khadka/js-ecommerce/assets/107389556/1b5bd16f-5502-47ba-a176-5a6ae017e668)
 
-## Deleat Item feature is not yet available but will be soon if i work on admin site pannel
+## Delete Item feature is not yet available but will be soon if i work on admin site pannel
 
 
 
