@@ -2,33 +2,131 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f5f5f5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  
-}
-.total{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  gap:250px;
-}
-.main>img,.brand>img{
-  height:70px;
-  width:290px;
-}
-.main>p{
-  margin-left:50px;
-}
-.footer{
-  margin-top: 100px;
+  min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-.login-container {
+/* Navbar Styles */
+.nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F4EBE9;
+  padding: 0 20px; /* Reduce padding to prevent overflow */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.main {
+  display: flex;
+  align-items: center;
+}
+
+.main img {
+  height: 60px;
+  width: auto; /* Adjust to maintain aspect ratio */
+}
+
+.main p {
+  margin-left: 20px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links a {
+  text-decoration: none;
+  color: #CB8884;
+  font-size: larger;
+  font-weight: bold;
+  margin-left: 25px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Reduce gap to prevent overflow */
+}
+
+.cart svg, .user svg {
+  width: 30px;
+  height: 30px;
+  fill: #CB8884;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-right: 20px;
+}
+
+.user div {
+  background-color: #CB8884;
+  padding: 5px 9px;
+  font-size: larger;
+  font-weight: bold;
+  color: #F4EBE9;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Content Styles */
+.total {
+  background-image: url(./img/file.png);
+  background-position: calc(10% + 20px) center; /* Move the image 20px to the right */
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative; /* Needed for the overlay */
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  gap: 50px;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding is included in width */
+  
+}
+
+.total::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  z-index: 1;
+}
+
+.total > * {
+  position: relative;
+  z-index: 2;
+  
+}
+
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main > p {
+  margin-right: -200px;
+}
+
+.addItem-container {
   width: 400px;
   padding: 20px;
   background-color: #fff;
@@ -45,21 +143,17 @@ body {
 .form-group {
   margin-bottom: 20px;
 }
-label {
-  display: block;
-  font-weight: 500;
-  margin-bottom: 5px;
-  color: #555;
-}
 
 input[type="text"],
-input[type="password"] {
-  width: 90%;
+input[type="password"],
+input[type="number"],
+input[type="url"] {
+  width: calc(100% - 20px);
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
-  margin-left: 8px;
+  margin: auto;
 }
 
 .btn {
@@ -81,4 +175,20 @@ input[type="password"] {
   background-color: #F4EBE9;
   color: #CB8884;
   border: 2px solid #CB8884;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #F4EBE9;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto;
+  width: 100%; /* Ensure footer takes full width */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.footer p {
+  margin: 0;
+  color: #CB8884;
+  font-weight: bold;
 }

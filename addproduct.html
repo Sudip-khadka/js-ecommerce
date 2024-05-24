@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="nav">
+    <div class="main">
+        <img src="./img/Asset 8.png" alt="logo">
+    </div>
+    <div class="links">
+        <a href="./main.html">Home</a>
+        <a href="./addproduct.html">Add Items</a>
+        <a href="#">Products</a>
+        <a href="#">Track My Order</a>
+        
+    </div>
+    <div class="profile">
+        <div class="cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#CB8884" class="bi bi-bag-check" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+              </svg>
+        </div>
+        <div class="user">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#CB8884" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+              </svg>
+              <div type="submit" onclick="logout(event) " class="">Logout</div>
+        </div>
+    </div>
+</nav>
+  <div class="total">
+    
+      <div class="main">
+          
+      
+    </div>
+    <div class="addItem-container">
+      <div class="login-box">
+        <h2>Add Item</h2>
+        <form id="productForm">
+          <div class="form-group">
+            <input type="text" id="addTitle" placeholder="Enter Product Title" required>
+          </div>
+          <div class="form-group">
+            <input type="text" id="addDescription" placeholder="Enter Product Description" required>
+          </div>
+          <div class="form-group">
+            <input type="number" id="addPrice" placeholder="Enter Product Price" required>
+          </div>
+          <div class="form-group">
+            <input type="url" id="addImage" placeholder="Enter Image Url">
+          </div>
+          <button type="submit" class="btn">Add Item</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Developed & Maintained By Sudip Khadka</p>
+  </div>
+  <script src="./scriptAdd.js"></script>
+</body>
+</html>
